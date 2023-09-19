@@ -1,0 +1,17 @@
+version: '3.3'
+services:
+    rabbitmq:
+        container_name: travelRabbit
+        ports:
+            - '5672:5672'
+            - '15672:15672'
+        image: 'rabbitmq:3-management'
+    sqlserver:
+        image: mcr.microsoft.com/mssql/server:2019-latest
+        ports:
+            - 1433:1433
+        environment:
+            - ACCEPT_EULA=Y
+            - MSSQL_PID=Standard
+            - SA_PASSWORD=A123456@
+            - MSSQL_AGENT_ENABLED=true
