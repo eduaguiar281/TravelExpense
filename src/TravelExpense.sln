@@ -17,7 +17,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{31C5C4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6D2B1FA4-E5CD-4AC3-8F25-21915BE9E802}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelExpense.Integration.Tests", "..\tst\TravelExpense.Integration.Tests\TravelExpense.Integration.Tests.csproj", "{75A8943C-F407-4E47-AADF-8A5275691976}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelExpense.Integration.Tests", "..\tst\TravelExpense.Integration.Tests\TravelExpense.Integration.Tests.csproj", "{75A8943C-F407-4E47-AADF-8A5275691976}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ci", "ci", "{90780C10-BE7C-4E42-BADC-0097D8E696F4}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\integrationtests.yaml = ..\.github\workflows\integrationtests.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
