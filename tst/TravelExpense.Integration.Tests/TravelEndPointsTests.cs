@@ -88,6 +88,7 @@ namespace TravelExpense.Integration.Tests
             Assert.Equal(command.ExpenseId, @event!.ExpenseId);
             Assert.Equal(command.VoucherId, @event!.VoucherId);
             Assert.Equal(command.Comment, @event!.Comment);
+            //Comentário
         }
 
         [Fact]
